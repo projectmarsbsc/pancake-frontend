@@ -67,7 +67,7 @@ const CTACards = styled(BaseLayout)`
   grid-gap: 24px;
 
   & > div {
-    grid-column: span 6;
+    grid-column: span 12;
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -98,7 +98,7 @@ const Home: React.FC = () => {
       <Page>
         <Hero>
           <Heading as="h1" scale="xl" mb="24px" color="secondary">
-            {t('Project Mars')}
+            {t('ProjectMars')}
           </Heading>
           <Text>{t('Why go to the moon when you can go to $Mars.')}</Text>
         </Hero>
@@ -109,13 +109,13 @@ const Home: React.FC = () => {
             <PredictionPromotionCard />
             */}
           </Cards>
+          {/*
           <CTACards>
             <EarnAPRCard />
             <EarnAssetCard />
-            {/*
             <LotteryPromotionCard currentLotteryPrize={currentLotteryPrize} />
-            */}
           </CTACards>
+          */}
           <Cards>
             <CakeStats />
             <TotalValueLockedCard />
