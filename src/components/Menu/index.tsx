@@ -37,8 +37,8 @@ const Menu = (props) => {
         noProfileLink: '/profile',
         showPip: !profile?.username,
       }}
-      */}
       {...props}
+      */}
     />
   )
 }
