@@ -3,10 +3,10 @@ import { ChainId, Token } from '@pancakeswap/sdk'
 export const CAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
-    18,
-    'CAKE',
-    'PancakeSwap Token',
+    '0x4035652516911d7784Ed3C79462657130d86Aea9',
+    9,
+    'MARS',
+    'ProjectMars Token',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
@@ -65,13 +65,13 @@ const tokens = {
     projectLink: 'https://www.binance.com/',
   },
   cake: {
-    symbol: 'CAKE',
+    symbol: 'MARS',
     address: {
-      56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
-      97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+      56: '0x4035652516911d7784Ed3C79462657130d86Aea9',
+      97: '',
     },
-    decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    decimals: 9,
+    projectLink: 'https://projectmars.io/',
   },
   sps: {
     symbol: 'SPS',
