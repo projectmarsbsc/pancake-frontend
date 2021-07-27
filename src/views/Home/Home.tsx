@@ -92,7 +92,9 @@ const Home: React.FC = () => {
 
   return (
     <>
-      
+      {/*
+     <LotteryBanner currentLotteryPrize={currentLotteryPrize} />
+     */}
       <Page>
         <Hero>
           <Heading as="h1" scale="xl" mb="24px" color="secondary">
@@ -103,16 +105,16 @@ const Home: React.FC = () => {
         <div>
           <Cards>
             <FarmStakingCard />
-            /**
-            *<PredictionPromotionCard />
-            */
+            {/*
+            <PredictionPromotionCard />
+            */}
           </Cards>
           <CTACards>
             <EarnAPRCard />
             <EarnAssetCard />
-            /**
-            *<LotteryPromotionCard currentLotteryPrize={currentLotteryPrize} />
-            */
+            {/*
+            <LotteryPromotionCard currentLotteryPrize={currentLotteryPrize} />
+            */}
           </CTACards>
           <Cards>
             <CakeStats />
