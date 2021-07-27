@@ -10,7 +10,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'FUEL',
     lpAddresses: {
       97: '',
-      56: '0x4035652516911d7784Ed3C79462657130d86Aea9',
+      56: '0x37ac4d6140e54304d77437a5c11924f61a2d976f',
     },
     token: tokens.syrup,
     quoteToken: tokens.wbnb,
@@ -20,7 +20,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'FUEL-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x4035652516911d7784Ed3C79462657130d86Aea9',
+      56: '0x37ac4d6140e54304d77437a5c11924f61a2d976f',
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
