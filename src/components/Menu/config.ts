@@ -35,11 +35,14 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'PoolIcon',
     href: '/pools',
   },
+  {/*
   {
     label: t('Prediction (BETA)'),
     icon: 'PredictionsIcon',
     href: '/prediction',
   },
+  */}
+  {/*
   {
     label: t('Lottery'),
     icon: 'TicketIcon',
@@ -77,20 +80,24 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
     ],
   },
+  */}
   {
     label: t('Info'),
     icon: 'InfoIcon',
     href: 'https://pancakeswap.info',
   },
+    {/*
   {
     label: t('IFO'),
     icon: 'IfoIcon',
     href: '/ifo',
   },
+   */}
   {
     label: t('More'),
     icon: 'MoreIcon',
     items: [
+      {/*
       {
         label: t('Contact'),
         href: 'https://docs.pancakeswap.finance/contact-us',
@@ -99,22 +106,25 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Voting'),
         href: '/voting',
       },
+      */}
       {
         label: t('Github'),
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/projectmarsbsc',
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://github.com/projectmarsbsc',
       },
       {
         label: t('Blog'),
-        href: 'https://pancakeswap.medium.com',
+        href: 'https://twitter.com/projectmarsio',
       },
+        {/*
       {
         label: t('Merch'),
         href: 'https://pancakeswap.creator-spring.com/',
       },
+        */}
     ],
   },
 ]
