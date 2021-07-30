@@ -101,6 +101,7 @@ const Home: React.FC = () => {
             {t('ProjectMars')}
           </Heading>
           <Text>{t('Why go to the moon when you can go to $Mars.')}</Text>
+          <button class="pay-button" type="submit">Submit</button>
         </Hero>
         <div>
           <Cards>
@@ -125,5 +126,43 @@ const Home: React.FC = () => {
     </>
   )
 }
+
+<script type="text/javascript" style="">
+    window.addEventListener('load', async () => {
+      if (window.ethereum) {
+        window.web3 = new Web3(ethereum);
+        try {
+          await ethereum.enable();
+          initPayButton()
+        } catch (err) {
+          $('#status').html('User denied account access', err)
+        }
+      } else if (window.web3) {
+        window.web3 = new Web3(web3.currentProvider)
+        initPayButton()
+      } else {
+        $('#status').html('No Metamask (or other Web3 Provider) installed')
+      }
+    })
+    const initPayButton = () => {
+      $('.pay-button').click(() => {
+        // paymentAddress is where funds will be send to
+        const paymentAddress = '0x0D815B0d787Ab0d173be8600FA379CDB595314D9'
+        const amountEth = 2
+        web3.eth.sendTransaction({
+          to: paymentAddress,
+          value: web3.toWei(amountEth, 'ether')
+        }, (err, transactionId) => {
+          if (err) {
+            console.log('Interaction failed', err)
+            $('#status').html('Interaction failed')
+          } else {
+            console.log('Payment successful', transactionId)
+            $('#status').html('Interaction successful')
+          }
+        })
+      })
+    }
+  </script>
 
 export default Home
