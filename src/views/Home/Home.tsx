@@ -101,7 +101,7 @@ const Home: React.FC = () => {
             {t('ProjectMars')}
           </Heading>
           <Text>{t('Why go to the moon when you can go to $Mars.')}</Text>
-          <button class="pay-button" type="submit">Submit</button>
+          <input id="button" value="button"/>
         </Hero>
         <div>
           <Cards>
