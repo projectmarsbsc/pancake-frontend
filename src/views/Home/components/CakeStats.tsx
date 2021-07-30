@@ -42,7 +42,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('New FUEL/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={19} />
+          <CardValue fontSize="14px" decimals={0} value={10000} />
         </Row>
       </CardBody>
     </StyledCakeStats>
